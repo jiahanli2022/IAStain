@@ -20,9 +20,9 @@ CUDA_VISIBLE_DEVICES=0 python train.py  --gpu_ids 0 \
     --dino_sample 96 --dataset_name 'PR'\
     --use_scl --sample_per_cluster 1 --total_cluster_number 100 --lambda_scl 0.5 --temperature 0.07 --other_cluster_number 32 \
     --use_mask --bio_mask_dir BioMask/MIST/PR/ \
-    --use_dino --dino_mask_dir dino-main/DINO-Attention/epoch800/MIST/PR/trainA/attn-head-5/ \
-    --dataroot  /home/ubuntu/02.data/01.original_data/MIST/PR/TrainValAB/ \
-    --fine_path_label_dictionary dino-main/extracted_feats/MIST_PR_256/coarse_path_label.pt \
-    --fine_label_path_dictionary dino-main/extracted_feats/MIST_PR_256/coarse_label_path.pt 
+    --use_dino --dino_mask_dir dino-main/DINO-Attention/MIST/PR/trainA/attn-head-5/ \
+    --dataroot  PR/TrainValAB/ \
+    --fine_path_label_dictionary /coarse_path_label.pt \
+    --fine_label_path_dictionary /coarse_label_path.pt 
 ```
 
